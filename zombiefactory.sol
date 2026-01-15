@@ -22,8 +22,8 @@ contract ZombieFactory is Ownable {
 
     Zombie[] public zombies;
 
-    mapping(uint => address ) zombieToOwner;
-    mapping(address => uint) ownerZombieCount;
+    mapping(uint => address) public zombieToOwner;
+    mapping(address => uint) public ownerZombieCount;
 
     constructor() Ownable(msg.sender) {}
 
